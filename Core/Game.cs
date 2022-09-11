@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
-using OpenTK;
-using OpenTK.Graphics;
-using OpenTK.Graphics.OpenGL;
+﻿using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Drawing;
+using Feesh.Core.Mesh;
 using Vector2 = OpenTK.Mathematics.Vector2;
 
 namespace Feesh
@@ -23,8 +22,9 @@ namespace Feesh
 
         private Vector2 lastPos;
 
-        private GameObject gameObject;
-        private GameObject gameObject2;
+        private List<GameObject> gameObjects = new List<GameObject>();
+
+        public float theNum = 1;
 
         public Game(string windowTitle) : base(GameWindowSettings.Default, NativeWindowSettings.Default)
         {
@@ -35,23 +35,48 @@ namespace Feesh
 
         protected override void OnLoad()
         {
-            renderer = new Renderer(Color.Black);
+            base.OnLoad();
 
-            gameObject = new GameObject("scene.gltf", Vector3.Zero, Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(-90),0,0), Vector3.One, renderer);
-            gameObject2 = new GameObject("scene.gltf", Vector3.Zero, Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(90), 0,0), Vector3.One, renderer);
+            renderer = new Renderer(Color.Coral);
+
+                gameObjects.Add(new GameObject("Posa_13.fbx", new Vector3(0, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(-90), 0, 0), Vector3.One * 0.01f, renderer));
+                gameObjects.Add(new GameObject("IronMan.obj", new Vector3(4, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(0), 0, 0), Vector3.One * 0.02f, renderer));
+                gameObjects.Add(new GameObject("scene.gltf", new Vector3(8, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(-90), 0, 0), Vector3.One, renderer));
+                gameObjects.Add(new GameObject("IronMan.obj", new Vector3(12, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(0), 0, 0), Vector3.One * 0.02f, renderer));
+                gameObjects.Add(new GameObject("Posa_13.fbx", new Vector3(16, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(-90), 0, 0), Vector3.One * 0.01f, renderer));
+                gameObjects.Add(new GameObject("IronMan.obj", new Vector3(20, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(0), 0, 0), Vector3.One * 0.02f, renderer));
+                gameObjects.Add(new GameObject("scene.gltf", new Vector3(24, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(-90), 0, 0), Vector3.One, renderer));
+                gameObjects.Add(new GameObject("IronMan.obj", new Vector3(28, 0, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(0), 0, 0), Vector3.One * 0.02f, renderer));
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    for (int j = 0; j < 10; j++)
+            //    {
+            //        Stopwatch stopwatch = Stopwatch.StartNew();
+            //        new GameObject("TESTING.FBX", new Vector3(i, j, 0), Quaternion.FromEulerAngles(MathHelper.DegreesToRadians(-90), 0, 0), Vector3.One, renderer); 
+            //        stopwatch.Stop();
+
+            //        TimeSpan ts = stopwatch.Elapsed;
+
+            //        Console.WriteLine("game object created in {2:00}.{3} seconds",
+            //            ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
+            //    }
+            //}
 
             camera = new Camera(Vector3.UnitZ * 3, Size.X / (float)Size.Y);
 
-            base.OnLoad();
+            CursorGrabbed = true;
+
         }
 
         protected override void OnResize(ResizeEventArgs e)
         {
+            //Utils.WriteLine("resized to :" + e.Height +" , " + e.Width, ConsoleColor.White);
             GL.Viewport(0, 0, e.Width, e.Height);
 
             // We need to update the aspect ratio once the window has been resized.
             camera.AspectRatio = Size.X / (float) Size.Y;
         }
+
 
         protected override void OnRenderFrame(FrameEventArgs e)
         {
@@ -82,6 +107,11 @@ namespace Feesh
             const float cameraSpeed = 1.5f;
             const float sensitivity = 0.2f;
 
+            if (input.IsKeyDown(Keys.LeftAlt) && input.IsKeyDown(Keys.Enter))
+            {
+                WindowState = WindowState == WindowState.Fullscreen ? WindowState.Normal : WindowState.Fullscreen;
+                Thread.Sleep(100);
+            }
             if (input.IsKeyDown(Keys.W))
             {
                 camera.Position += camera.Front * cameraSpeed * (float)e.Time; // Forward
@@ -99,33 +129,46 @@ namespace Feesh
                 camera.Position += camera.Right * cameraSpeed * (float)e.Time; // Right
             }
             if (input.IsKeyDown(Keys.Space))
-            {
-                camera.Position += camera.Up * cameraSpeed * (float)e.Time; // Up
-            }
             if (input.IsKeyDown(Keys.LeftShift))
             {
                 camera.Position -= camera.Up * cameraSpeed * (float)e.Time; // Down
             }
             if (input.IsKeyDown(Keys.R))
             {
-                gameObject.Transform.Position += new Vector3(30 * (float)e.Time, 0, 0);
+                foreach (var gameObject in gameObjects)
+                {
+                    gameObject.Transform.Position += new Vector3(30 * (float)e.Time, 0, 0);
+                }
             }
             if (input.IsKeyDown(Keys.T))
             {
-                gameObject.Transform.Rotate(5 * (float)e.Time, 0, 0);
-                Utils.WriteLine(gameObject.Transform.Rotation.ToString(), ConsoleColor.Cyan);
-            }
+                foreach (var gameObject in gameObjects)
+                {
+                    gameObject.Transform.Rotate(5 * (float) e.Time, 0, 0);
+                }
 
+            }
+            if (input.IsKeyDown(Keys.G))
+            {
+                theNum -= (float)(1 * e.Time);
+            }
             if (input.IsKeyDown(Keys.Y))
             {
-                gameObject.Transform.Scale += Vector3.One * (float)e.Time;
+                foreach (var gameObject in gameObjects)
+                {
+                    gameObject.Transform.Scale += Vector3.One * (float) e.Time;
+                }
             }
             if (input.IsKeyDown(Keys.U))
             {
-                gameObject.Transform.Scale -= Vector3.One * (float)e.Time;
+                foreach (var gameObject in gameObjects)
+                {
+                    gameObject.Transform.Scale -= Vector3.One * (float) e.Time;
+                }
             }
+
             // Get the mouse state
-            var mouse = MouseState;
+                var mouse = MouseState;
 
             if (firstMove) // This bool variable is initially set to true.
             {
@@ -150,7 +193,7 @@ namespace Feesh
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
             foreach (var gameObject in renderer.renderQueue)
             {
-                foreach (var mesh in gameObject.Mesh)
+                foreach (var mesh in ModelLib.Meshes[gameObject.MeshId])
                 {
                     GL.DeleteBuffer((int)mesh.VertexBufferObject);
                 }

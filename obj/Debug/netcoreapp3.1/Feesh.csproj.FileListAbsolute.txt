@@ -89,7 +89,6 @@ D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Shader
 D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Textures\Feesh.jpg
 D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Textures\Fish.jpg
 D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.exe
-D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\Fish.obj
 D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\scene.bin
 D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\scene.gltf
 D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.deps.json
@@ -129,3 +128,55 @@ D:\Coding projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.csproj.
 D:\Coding projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.dll
 D:\Coding projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.pdb
 D:\Coding projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.genruntimeconfig.cache
+D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Shaders\Light.frag
+D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\TESTING.FBX
+D:\Coding projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\Posa_13.fbx
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\IronMan.obj
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\Posa_13.fbx
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\scene.bin
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\scene.gltf
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Meshes\TESTING.FBX
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Shaders\Light.frag
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Shaders\shader.frag
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Shaders\shader.vert
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Textures\Feesh.jpg
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Assets\Textures\Fish.jpg
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.exe
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.deps.json
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.runtimeconfig.json
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.runtimeconfig.dev.json
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Feesh.pdb
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\AssimpNet.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Compute.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Core.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Graphics.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Input.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Mathematics.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.OpenAL.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Windowing.Common.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Windowing.Desktop.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\OpenTK.Windowing.GraphicsLibraryFramework.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libassimp.so
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libassimp.dylib
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\assimp.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\assimp.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libglfw.so.3.3
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libglfw.3.dylib
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\glfw3.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\glfw3.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.AssemblyInfoInputs.cache
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.AssemblyInfo.cs
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.csproj.CoreCompileInputs.cache
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.dll
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.pdb
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.genruntimeconfig.cache
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.csproj.AssemblyReference.cache
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding_projects\FeeshEngine\FeeshEngine\obj\Debug\netcoreapp3.1\Feesh.csproj.CopyComplete

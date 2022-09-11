@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rwv5GtlaUvllBasK5K8K5H3Fnjr+RuEoorYMS/+BljLMi1kq8jMX0Vc6i6TtEKwlmWtq7LdJo9cvlKBIpkO1HA==",
+  "dgSpecHash": "H19CBgWw9LKQ8QbJq+eFGz5XwyGJydbKeq0xrwe763sE1A/zeKH5hOBA5WmsANzYY3qANWI3QcM1GXLBMbGrog==",
   "success": true,
-  "projectFilePath": "D:\\Coding projects\\FeeshEngine\\FeeshEngine\\Feesh.csproj",
+  "projectFilePath": "D:\\Coding_projects\\FeeshEngine\\FeeshEngine\\Feesh.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maart\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Maart\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
@@ -91,7 +91,8 @@
     "C:\\Users\\Maart\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Maart\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Maart\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Maart\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Maart\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Maart\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
 }

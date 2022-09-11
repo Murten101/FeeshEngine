@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using OpenTK;
 using OpenTK.Graphics.OpenGL;
-using System.Drawing;
 using OpenTK.Mathematics;
+using System.Collections.Generic;
+using System.Drawing;
+using Feesh.Core.Mesh;
+
 namespace Feesh
 {
     public class Renderer
@@ -21,13 +20,18 @@ namespace Feesh
         {
             foreach (var gameObject in renderQueue)
             {
-                gameObject.shader.Use();
+                gameObject.Shader.Use();
 
-                gameObject.shader.SetMatrix4("model", gameObject.Transform.TransformMatrix);
-                gameObject.shader.SetMatrix4("view", game.camera.GetViewMatrix());
-                gameObject.shader.SetMatrix4("projection", game.camera.GetProjectionMatrix());
+                gameObject.Shader.SetMatrix4("model", gameObject.Transform.TransformMatrix);
+                gameObject.Shader.SetMatrix4("view", game.camera.GetViewMatrix());
+                gameObject.Shader.SetMatrix4("projection", game.camera.GetProjectionMatrix());
 
-                foreach (var mesh in gameObject.Mesh)
+                gameObject.Shader.SetVector3("objectColor", new Vector3(0.0f, 1f, 0f));
+                gameObject.Shader.SetVector3("lightColor", new Vector3(1.0f, 1.0f, 1.0f));
+                gameObject.Shader.SetVector3("lightPos", game.camera.Position);
+                gameObject.Shader.SetVector3("viewPos", game.camera.Position);
+
+                foreach (var mesh in ModelLib.Meshes[gameObject.MeshId])
                 {
                     GL.BindVertexArray(mesh.VertexArrayObject);
 

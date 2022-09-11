@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Feesh.Core.Mesh;
+using Feesh.Core.Visuals;
 using OpenTK.Mathematics;
 
 namespace Feesh
@@ -8,14 +7,14 @@ namespace Feesh
     public class GameObject
     {
         public Transform Transform;
-        public List<Mesh> Mesh;
-        public Shader shader;
+        public int MeshId;
+        public Shader Shader;
         public GameObject(string modelPath, Vector3 position, Quaternion rotation, Vector3 scale, Renderer renderer)
         {
-            shader = new Shader("shader.vert", "shader.frag");
-            shader.Texture = new Texture("Fish.jpg");
+            Shader = new Shader("Shader.vert", "Shader.frag");
+            Shader.Texture = new Texture("Fish.jpg");
             this.Transform = new Transform(position, rotation, scale);
-            this.Mesh = ModelLoader.loadMesh(modelPath);
+            this.MeshId = ModelLoader.loadMesh(modelPath);
             renderer.renderQueue.Add(this);
         }
 

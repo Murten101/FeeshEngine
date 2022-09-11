@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Shaders\shader.frag">
+    <Resource Include="Assets\Shaders\Light.frag">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Shaders\shader.vert">
@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Assets\Meshes\Fish.obj">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Update="Assets\Meshes\Posa_13.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Assets\Meshes\scene.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -33,7 +33,13 @@
     <None Update="Assets\Meshes\IronMan.obj">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Assets\Meshes\TESTING.FBX">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Assets\Shaders\shader.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\Shaders\Light.frag">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Assets\Shaders\shader.vert">
